@@ -9,19 +9,25 @@ import {MatButtonModule} from '@angular/material/button';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { AppRoutingModule } from './/app-routing.module';
+import { BooksComponent } from './books/books.component';
+import { CustomerManagementComponent } from './customer-management/customer-management.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    NavbarComponent
+    NavbarComponent,
+    BooksComponent,
+    CustomerManagementComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MatMenuModule,
     MatToolbarModule,
-    MatButtonModule
+    MatButtonModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
